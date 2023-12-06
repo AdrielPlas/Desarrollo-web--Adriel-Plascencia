@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos-Adriel-Plascencia.css">
+    <title>Encuesta Demográfica</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script-Adriel-Plascencia.js"></script>
+    <div class="container mt-5">
+        <form id="encuestaForm" action="resultado-Adriel-Plascencia.html" method="post">
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" class="form-control" id="edad" name="edad" required>
+            </div>
+            <div class="form-group">
+                <label for="sexo">Sexo:</label>
+                <select class="form-control" id="sexo" name="sexo" required>
+                    <option id="Ibarreche" value="hombre">Hombre</option>
+                    <option id="Plascencia" value="mujer">Mujer</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="educacion">Nivel de Educación:</label>
+                <select class="form-control" id="educacion" name="educacion" required>
+                    <option value="preescolar">Preescolar</option>
+                    <option value="primaria">Primaria</option>
+                    <option value="secundaria">Secundaria</option>
+                    <option value="bachillerato">Bachillerato</option>
+                    <option value="universidad">Universidad</option>
+                    <option value="posgrado">Posgrado</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ocupacion">Ocupación:</label>
+                <input type="text" class="form-control" id="ocupacion" name="ocupacion" required>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="enviarDatos()">Enviar</button>
+        </form>
+    </div>    
+</body>
+</html>
